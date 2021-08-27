@@ -1,0 +1,82 @@
+/* 
+  Localizable.strings
+  RedSheet
+
+  Created by 周廷叡 on 2021/03/28.
+  
+*/
+
+/// MARK: listVCの
+"listVC.title" = "";
+"listVC.sort.byName" = "be name (dictionary)";
+"listVC.sort.byDate" = "by creation date (early)";
+"listVC.sort.byCount" = "by number of times opened (many)";
+"listVC.sort.reverse" = "reverse";
+
+//設定のタイトル
+"settingVC.title" = "Settings";
+
+//MARK:  チュートリアル
+//MARK: Preview
+"tutorial.preview.list" = "This is a list of filters. Filters that are currently applied are marked with a blue checkmark. You can apply multiple filters at the same time. To add a filter, press the plus button.";
+
+"tutorial.preview.lock" = "This button allows you to fix the movement of the sheet. In addition, you will be able to move and zoom the document even from above the sheet!";
+
+"tutorial.preview.nextDoc" = "Tap this button to open the next document";
+
+"tutorial.preview.prevDoc" = "Tap this button to open the previous document";
+
+"tutorial.preview.doubleTap" = "Double-tap the screen to hide the menu and top bar";
+
+// MARK: Settings
+"settings.editColor.createOriginalFilter" = "Create your original filter";
+
+"tutorial.settings.deleteCache" = "Do you want to delete the filter cache?";
+"tutorial.settings.deleteCacheTips" = "The next time you open the document, the filtering process will start\n (don't worry, the document data will not be lost).";
+"tutorial.settings.resetSettings" = "Do you really want to initialize the settings?";
+"tutorial.settings.deleteAllSheet" = "Do you really want to delete all sheets? \n (the default sheets will remain)";
+"tutorial.settings.deleteAllDocument" = "Do you really want to delete all Documents?";
+"tutorial.settings.clearAllData" = "Do you really want to delete all your data?";
+"tutorial.settings.reset" = "Initialize";
+"tutorial.settings.delete" = "Delete";
+"tutorial.settings.cancel" = "Cancel";
+"tutorial.settings.cannotBeUndone" = "This operation cannot be undone.";
+
+//MARK: アラート
+// Default
+"alert.default.cancel" = "Cancel";
+"alert.default.cannotBeUndone" = "This action cannot be undone";
+"alert.default.areYouSure" = "Are you sure?";
+"alert.default.delete" = "Delete";
+
+// List
+
+"alert.list.resume.title" = "Welcome back!";
+"alert.list.resume.message" = "Do you want to resume the document you were viewing last time?";
+"alert.list.resume.resume" = "Yes, let's resume";
+"alert.list.delete.folder.isOk" = "Documents and folders contained inside will also be deleted.";
+
+//MARK: シートのテンプレ
+"sheet.name.orange-white" = "Orange to white";
+"sheet.name.green-black" = "Green to black";
+"sheet.name.blue-white" = "Blue to white";
+"sheet.name.blue-black" = "Blue to black";
+"sheet.name.purple-white" = "Purple to white";
+
+//MARK: クレジット
+"credit.version" = "Version";
+
+//MARK: ドキュメントのデフォルト値
+"document.default.title" = "Untitled document";
+
+//MARK: フォルダーのデフォルト値
+"folder.default.title" = "Untitled folder";
+
+//MARK: アプリアイコン
+"icon.name.blueLight" = "Blue in light mode";
+"icon.name.blueDark" = "Blue in dark mode";
+"icon.name.redLight" = "Red in light mode";
+"icon.name.redDark" = "Red in dark mode";
+"icon.name.classicBlue" = "Classic blue";
+"icon.name.classicRed" = "Classic red";
+

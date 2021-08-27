@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z6z-a9-lDd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Edit Doc View Controller-->
+        <scene sceneID="nBV-mO-ZJh">
+            <objects>
+                <viewController storyboardIdentifier="editDoc" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Z6z-a9-lDd" customClass="EditDocViewController" customModule="RedSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RaY-2Y-Lvd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rwT-US-DLr">
+                                <rect key="frame" x="83" y="252" width="248" height="403"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xGO-bI-GkF">
+                                <rect key="frame" x="143" y="687" width="128" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="ItR-9U-iXS"/>
+                                    <constraint firstAttribute="height" constant="40" id="M38-Ht-jUl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="Z6z-a9-lDd" eventType="touchUpInside" id="AyE-Nf-eDD"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="xmark.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="X81-Jt-p9l">
+                                <rect key="frame" x="32" y="76.5" width="64" height="63"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="0Oc-N5-FZU"/>
+                                    <constraint firstAttribute="height" constant="64" id="oNo-Dd-KQD"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-2h-iPS">
+                                <rect key="frame" x="62" y="172" width="290" height="48"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ドキュメント名..." textAlignment="center" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="553-0n-sc8">
+                                        <rect key="frame" x="8" y="11.5" width="274" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="4Lm-ad-zVX"/>
+                                    <constraint firstAttribute="height" priority="750" constant="48" id="SRf-lb-ev7"/>
+                                    <constraint firstItem="553-0n-sc8" firstAttribute="centerY" secondItem="OW7-2h-iPS" secondAttribute="centerY" id="XgV-fZ-K43"/>
+                                    <constraint firstItem="553-0n-sc8" firstAttribute="leading" secondItem="OW7-2h-iPS" secondAttribute="leading" constant="8" id="iVt-4A-RI5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="pKM-ww-1qK"/>
+                                    <constraint firstAttribute="trailing" secondItem="553-0n-sc8" secondAttribute="trailing" constant="8" id="x4A-XL-Cub"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sEl-W8-1af"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="sEl-W8-1af" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="xGO-bI-GkF" secondAttribute="bottom" constant="32" id="5Ax-kl-VMt"/>
+                            <constraint firstItem="X81-Jt-p9l" firstAttribute="leading" secondItem="sEl-W8-1af" secondAttribute="leading" constant="32" id="7ly-gM-191"/>
+                            <constraint firstItem="OW7-2h-iPS" firstAttribute="width" secondItem="RaY-2Y-Lvd" secondAttribute="width" multiplier="0.7" priority="750" id="8dK-Ak-fih"/>
+                            <constraint firstItem="rwT-US-DLr" firstAttribute="width" secondItem="RaY-2Y-Lvd" secondAttribute="width" multiplier="0.6" priority="750" id="Dxx-eJ-cSq"/>
+                            <constraint firstItem="X81-Jt-p9l" firstAttribute="top" secondItem="sEl-W8-1af" secondAttribute="top" constant="32" id="KbN-4v-Ycy"/>
+                            <constraint firstItem="OW7-2h-iPS" firstAttribute="centerX" secondItem="RaY-2Y-Lvd" secondAttribute="centerX" id="b3V-qQ-hyl"/>
+                            <constraint firstItem="rwT-US-DLr" firstAttribute="centerX" secondItem="RaY-2Y-Lvd" secondAttribute="centerX" id="dQp-D8-kum"/>
+                            <constraint firstItem="OW7-2h-iPS" firstAttribute="top" secondItem="sEl-W8-1af" secondAttribute="top" priority="750" constant="128" id="fGd-fK-Gah"/>
+                            <constraint firstItem="rwT-US-DLr" firstAttribute="height" secondItem="RaY-2Y-Lvd" secondAttribute="height" multiplier="0.449777" priority="750" id="g9n-RH-7nd"/>
+                            <constraint firstItem="rwT-US-DLr" firstAttribute="top" secondItem="OW7-2h-iPS" secondAttribute="bottom" constant="32" id="lTq-Tu-eIF"/>
+                            <constraint firstItem="xGO-bI-GkF" firstAttribute="top" secondItem="rwT-US-DLr" secondAttribute="bottom" constant="32" id="lf4-yK-t34"/>
+                            <constraint firstItem="rwT-US-DLr" firstAttribute="height" relation="lessThanOrEqual" secondItem="RaY-2Y-Lvd" secondAttribute="height" multiplier="0.45" id="uML-Cg-7Wb"/>
+                            <constraint firstItem="xGO-bI-GkF" firstAttribute="centerX" secondItem="RaY-2Y-Lvd" secondAttribute="centerX" id="wPV-gd-nWt"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="M72-tw-hql" appends="YES" id="ard-Fg-48C"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="documentImageView" destination="rwT-US-DLr" id="pcB-x9-lkC"/>
+                        <outlet property="documentTitleField" destination="553-0n-sc8" id="vfF-X7-bon"/>
+                        <outlet property="saveButton" destination="xGO-bI-GkF" id="dnt-EI-DXO"/>
+                        <outlet property="titleFieldParentView" destination="OW7-2h-iPS" id="Rsa-Jk-T3g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NtG-wc-4o3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="M72-tw-hql">
+                    <connections>
+                        <action selector="outsideTapped:" destination="Z6z-a9-lDd" id="YEh-3Y-BMj"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-359.4202898550725" y="131.91964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

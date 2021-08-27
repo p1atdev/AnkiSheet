@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bt7-gp-fnb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="zZS-9X-YxJ">
+            <objects>
+                <viewController storyboardIdentifier="menu" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bt7-gp-fnb" customClass="MenuViewController" customModule="RedSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S8R-7U-URP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQa-h9-vWL" customClass="HamburgerMenuRootButton" customModule="RedSheet" customModuleProvider="target">
+                                <rect key="frame" x="175" y="798" width="64" height="64"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Qtf-3X-Peb"/>
+                                    <constraint firstAttribute="width" secondItem="TQa-h9-vWL" secondAttribute="height" multiplier="1:1" id="Vbh-7F-EFN"/>
+                                    <constraint firstAttribute="height" constant="64" id="psh-s2-vqF"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="fromPDFButtonTouchUpInside:" destination="bt7-gp-fnb" eventType="touchUpInside" id="QYP-of-dA2"/>
+                                    <action selector="menuButtonTouchDown:" destination="bt7-gp-fnb" eventType="touchDown" id="kic-eD-APr"/>
+                                    <action selector="menuButtonTouchUpOutside:" destination="bt7-gp-fnb" eventType="touchDragOutside" id="xIk-Ki-GeZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4W-z8-Plr" customClass="HamburgerMenuRootButton" customModule="RedSheet" customModuleProvider="target">
+                                <rect key="frame" x="175" y="798" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="GmO-vg-ha9"/>
+                                    <constraint firstAttribute="width" secondItem="h4W-z8-Plr" secondAttribute="height" multiplier="1:1" id="e8D-dm-G61"/>
+                                    <constraint firstAttribute="height" constant="64" id="oVj-3B-UfK"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="fromPicturesButtonTouchUpInside:" destination="bt7-gp-fnb" eventType="touchUpInside" id="Mlz-g6-wfI"/>
+                                    <action selector="menuButtonTouchDown:" destination="bt7-gp-fnb" eventType="touchDown" id="EYA-nH-Tas"/>
+                                    <action selector="menuButtonTouchUpOutside:" destination="bt7-gp-fnb" eventType="touchUpOutside" id="qQj-d1-Zip"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Mq-RF-Etn" customClass="HamburgerMenuRootButton" customModule="RedSheet" customModuleProvider="target">
+                                <rect key="frame" x="175" y="798" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="NWs-lx-UMU"/>
+                                    <constraint firstAttribute="height" constant="64" id="gLi-JJ-IXk"/>
+                                    <constraint firstAttribute="width" secondItem="0Mq-RF-Etn" secondAttribute="height" multiplier="1:1" id="k2a-wg-7oc"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="fromCameraButtonTouchUpInside:" destination="bt7-gp-fnb" eventType="touchUpInside" id="17X-Gc-K2X"/>
+                                    <action selector="menuButtonTouchDown:" destination="bt7-gp-fnb" eventType="touchDown" id="p8j-Gy-jmN"/>
+                                    <action selector="menuButtonTouchUpOutside:" destination="bt7-gp-fnb" eventType="touchUpOutside" id="RUv-Gf-sMk"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rou-ud-GPK">
+                                <rect key="frame" x="175" y="798" width="64" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" placeholder="YES" id="E5E-zf-7zn"/>
+                                    <constraint firstAttribute="width" secondItem="rou-ud-GPK" secondAttribute="height" multiplier="1:1" id="cLB-tt-czd"/>
+                                    <constraint firstAttribute="width" constant="64" placeholder="YES" id="eMv-Fv-chH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="52H-UW-F7C"/>
+                        <constraints>
+                            <constraint firstItem="rou-ud-GPK" firstAttribute="bottom" secondItem="52H-UW-F7C" secondAttribute="bottom" placeholder="YES" id="1q6-MB-2Lf"/>
+                            <constraint firstItem="h4W-z8-Plr" firstAttribute="bottom" secondItem="52H-UW-F7C" secondAttribute="bottom" id="6Yl-hv-UiP"/>
+                            <constraint firstItem="TQa-h9-vWL" firstAttribute="centerX" secondItem="S8R-7U-URP" secondAttribute="centerX" id="Cmb-cB-Txg"/>
+                            <constraint firstItem="h4W-z8-Plr" firstAttribute="centerX" secondItem="S8R-7U-URP" secondAttribute="centerX" id="KVA-SX-muD"/>
+                            <constraint firstItem="rou-ud-GPK" firstAttribute="centerX" secondItem="S8R-7U-URP" secondAttribute="centerX" id="UPz-IX-Zv7"/>
+                            <constraint firstItem="0Mq-RF-Etn" firstAttribute="centerX" secondItem="S8R-7U-URP" secondAttribute="centerX" id="nDf-qn-q7W"/>
+                            <constraint firstItem="52H-UW-F7C" firstAttribute="bottom" secondItem="TQa-h9-vWL" secondAttribute="bottom" id="nux-oI-rXe"/>
+                            <constraint firstItem="52H-UW-F7C" firstAttribute="bottom" secondItem="0Mq-RF-Etn" secondAttribute="bottom" id="t0a-60-GY0"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="blockClearBackgroundView" destination="rou-ud-GPK" id="0Bw-br-OCd"/>
+                        <outlet property="fromCameraButton" destination="0Mq-RF-Etn" id="wxV-1a-DeI"/>
+                        <outlet property="fromPDFButton" destination="TQa-h9-vWL" id="TbG-Lb-bxl"/>
+                        <outlet property="fromPicturesButton" destination="h4W-z8-Plr" id="lAO-hU-3CU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6oU-DI-Re2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-286.95652173913044" y="178.79464285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

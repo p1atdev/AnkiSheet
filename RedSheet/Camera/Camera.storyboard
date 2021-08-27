@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="a2b-J5-NAD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--カメラ-->
+        <scene sceneID="rhZ-UD-qhE">
+            <objects>
+                <viewController storyboardIdentifier="camera" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a2b-J5-NAD" customClass="CameraViewController" customModule="RedSheet" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3G9-Yg-kXV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="029-5l-0YO" customClass="HamburgerMenuRootButton" customModule="RedSheet" customModuleProvider="target">
+                                <rect key="frame" x="175" y="717" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="4w8-UQ-JsS"/>
+                                    <constraint firstAttribute="width" constant="64" id="pWw-LB-9R4"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="shutterButtonTouchDown:" destination="a2b-J5-NAD" eventType="touchDown" id="gRX-oU-sYK"/>
+                                    <action selector="shutterButtonTouchUpInside:" destination="a2b-J5-NAD" eventType="touchUpInside" id="CZt-ag-bb6"/>
+                                    <action selector="shutterButtonTouchUpOutside:" destination="a2b-J5-NAD" eventType="touchUpOutside" id="SZc-zP-exl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rwO-sW-FU8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="029-5l-0YO" firstAttribute="centerX" secondItem="3G9-Yg-kXV" secondAttribute="centerX" id="1yJ-BK-Pzw"/>
+                            <constraint firstItem="rwO-sW-FU8" firstAttribute="bottom" secondItem="029-5l-0YO" secondAttribute="bottom" constant="32" id="eSa-h3-wb5"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="カメラ" id="jKE-Cn-bpc"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="shutterButton" destination="029-5l-0YO" id="H7A-vT-bIr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JZI-aC-biK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-336.23188405797106" y="155.35714285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

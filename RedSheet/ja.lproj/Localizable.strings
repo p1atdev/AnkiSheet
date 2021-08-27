@@ -1,0 +1,81 @@
+/* 
+  Localizable.strings
+  RedSheet
+
+  Created by 周廷叡 on 2021/03/28.
+  
+*/
+
+/// MARK: listVCの
+"listVC.title" = "一覧";
+"listVC.sort.byName" = "名前順(辞書順)";
+"listVC.sort.byDate" = "作成日順(早い順)";
+"listVC.sort.byCount" = "開いた回数順(多い順)";
+"listVC.sort.reverse" = "逆順";
+
+//設定のタイトル
+"settingVC.title" = "設定";
+
+
+"tutorial.preview.list" = "これはフィルターの一覧です。現在適応されているものには青いチェックマークがつきます。複数のフィルターを同時にかけることもできます。フィルターを追加するにはプラスボタンを押しましょう";
+
+"tutorial.preview.lock" = "このボタンを押すとシートの動きを固定させることができます。さらに、シートの上からでもドキュメントを動かしたり拡大したりできるようになります";
+
+"tutorial.preview.nextDoc" = "このボタンを押すと次のドキュメントを開くことができます";
+
+"tutorial.preview.prevDoc" = "このボタンを押すと前のドキュメントを開くことができます";
+
+"tutorial.preview.doubleTap" = "画面をダブルタップするとメニューや上部のバーを消すことができます";
+
+// MARK: Settings
+"settings.editColor.createOriginalFilter" = "オリジナルフィルターを作成";
+
+"tutorial.settings.deleteCache" = "フィルターキャッシュを削除しますか？";
+"tutorial.settings.deleteCacheTips" = "次回ドキュメントを開いた際にフィルタリング作業が入ります\n(ドキュメントのデータは消えません)";
+"tutorial.settings.resetSettings" = "本当に設定を初期化しますか？";
+"tutorial.settings.deleteAllSheet" = "本当に全てのシートを消去しますか?\n(デフォルトのシートは残ります)";
+"tutorial.settings.deleteAllDocument" = "本当に全てのドキュメントを消去しますか？";
+"tutorial.settings.clearAllData" = "本当に全てのデータを消去しますか？";
+"tutorial.settings.reset" = "初期化";
+"tutorial.settings.delete" = "消去";
+"tutorial.settings.cancel" = "キャンセル";
+"tutorial.settings.cannotBeUndone" = "この操作は取り消せません";
+
+//MARK: アラート
+// Default
+"alert.default.cancel" = "キャンセル";
+"alert.default.cannotBeUndone" = "この操作は取り消せません";
+"alert.default.areYouSure" = "削除していいですか？";
+"alert.default.delete" = "削除";
+
+// List
+
+"alert.list.resume.title" = "お帰り！";
+"alert.list.resume.message" = "前回閲覧途中だったドキュメントを再開する？";
+"alert.list.resume.resume" = "再開する！";
+"alert.list.delete.folder.isOk" = "中に含まれるドキュメントやフォルダーも削除されます";
+
+//MARK: シートのテンプレ
+"sheet.name.orange-white" = "オレンジ → ホワイト";
+"sheet.name.green-black" = "グリーン → ブラック";
+"sheet.name.blue-white" = "ブルー → ホワイト";
+"sheet.name.blue-black" = "ブルー → ブラック";
+"sheet.name.purple-white" = "パープル → ホワイト";
+
+//MARK: クレジット
+"credit.version" = "バージョン";
+
+//MARK: ドキュメントのデフォルト値
+"document.default.title" = "無題のドキュメント";
+
+//MARK: フォルダーのデフォルト値
+"folder.default.title" = "無題のフォルダー";
+
+//MARK: アプリアイコン
+"icon.name.blueLight" = "ブルー(ライト)";
+"icon.name.blueDark" = "ブルー(ダーク)";
+"icon.name.redLight" = "レッド(ライト)";
+"icon.name.redDark" = "レッド(ダーク)";
+"icon.name.classicBlue" = "クラシック(ブルー)";
+"icon.name.classicRed" = "クラシック(レッド)";
+
